@@ -22,6 +22,18 @@ mongoose
 
 const app = express();
 
+app.use( cors(
+  {
+    origin: ["https://uinvest.vercel.app/"],
+    methods: ["POST", "GET"],
+    credentials: true
+  }
+));
+
+app.get("/", (req, res)=>{
+  res.json("hello");
+})
+
 app.use(express.json());
 
 app.use(cookieParser());
