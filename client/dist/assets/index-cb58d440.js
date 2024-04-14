@@ -33784,7 +33784,7 @@ function J7() {
           v.jsx("div", {
             className: "hidden md:flex flex-col justify-between",
             children: v.jsx("img", {
-              src: "client/img/kashif-center.webp",
+              src: "./kashif-center.webp",
               alt: "Kashif Center",
               className: "rounded-lg shadow-lg",
               style: { maxHeight: "300px" },
@@ -33805,7 +33805,7 @@ function J7() {
               v.jsx("div", {
                 className: "hidden md:flex flex-col justify-between",
                 children: v.jsx("img", {
-                  src: "client/img/sarosh.jpg",
+                  src: "./sarosh.jpg",
                   alt: "Sarosh",
                   className: "rounded-lg shadow-lg",
                   style: { maxHeight: "300px", maxWidth: "300px" },
@@ -33828,7 +33828,7 @@ function J7() {
               v.jsx("div", {
                 className: "hidden md:flex flex-col justify-between",
                 children: v.jsx("img", {
-                  src: "client/img/AD-2022.jpg",
+                  src: "./AD-2022.jpg",
                   alt: "Sohaib",
                   className: "rounded-lg shadow-lg",
                   style: { maxHeight: "300px", maxWidth: "300px" },
