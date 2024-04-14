@@ -9,6 +9,10 @@ import path from 'path';
 // import cors from 'cors';
 dotenv.config();
 
+const cors = require("cors");
+app.use(cors());
+
+
 mongoose
   .connect(process.env.MONGO)
   .then(() => {
