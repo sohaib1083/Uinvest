@@ -32,7 +32,9 @@ export default function Listing() {
     const fetchListing = async () => {
       try {
         setLoading(true);
-        const res = await fetch(`https://uinvest-api.vercel.app/api/listing/get/${params.listingId}`);
+        const res = await fetch(`https://uinvest-api.vercel.app/api/listing/get/${params.listingId}`, {
+          mode: 'no-cors'
+        });
         const data = await res.json();
         if (data.success === false) {
           setError(true);
