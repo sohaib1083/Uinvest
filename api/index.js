@@ -6,7 +6,7 @@ import authRouter from './routes/auth.route.js';
 import listingRouter from './routes/listing.route.js';
 import cookieParser from 'cookie-parser';
 import path from 'path';
-// import cors from 'cors';
+import cors from 'cors';
 dotenv.config();
 
 const cors = require("cors");
@@ -28,7 +28,7 @@ mongoose
 const app = express();
 
 // Enable CORS for all origins
-// app.use(cors());
+app.use(cors());
 
 // app.use( cors(
 //   {
