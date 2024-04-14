@@ -26,7 +26,7 @@ const app = express();
 
 app.use( cors(
   {
-    origin: ["https://uinvest-api.vercel.app/"],
+    origin: ["https://uinvest.vercel.app/"],
     methods: ["POST", "GET"],
     credentials: true
   }
