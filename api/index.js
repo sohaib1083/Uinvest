@@ -38,9 +38,9 @@ const app = express();
 //   }
 // ));
 
-// app.get("/", (req, res)=>{
-//   res.json("hello");
-// })
+app.get("/", (req, res)=>{
+  res.json("hello");
+})
 
 app.use(express.json());
 
