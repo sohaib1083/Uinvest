@@ -23,6 +23,8 @@ mongoose
 
 const app = express();
 
+// Enable CORS for all origins
+app.use(cors());
 
 app.use( cors(
   {
