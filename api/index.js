@@ -9,7 +9,6 @@ import path from 'path';
 import cors from 'cors';
 dotenv.config();
 
-// const cors = require("cors");
 
 
 mongoose
@@ -22,20 +21,19 @@ mongoose
   console.log(err);
 });[]
 
-// const __dirname = path.resolve();
 
 const app = express();
 
-// Enable CORS for all origins
 app.use(cors());
 
-// app.use( cors(
-//   {
-//     origin: ["https://uinvest.vercel.app/"],
-//     methods: ["POST", "GET"],
-//     credentials: true
-//   }
-// ));
+// Use import.meta.url to get the current file path
+const __filename = new URL(import.meta.url).pathname;
+// Use path.dirname to get the directory name
+const __dirname = path.dirname(__filename);
+
+// Serve static files from the 'images' directory
+app.use('/api/images', express.static(path.join(__dirname, 'images')));
+
 
 app.get("/", (req, res)=>{
   res.json("hello");
@@ -54,11 +52,6 @@ app.use('/api/auth', authRouter);
 app.use('/api/listing', listingRouter);
 
 
-// app.use(express.static(path.join(__dirname, '/client/dist')));
-
-// app.get('*', (req, res) => {
-//   res.sendFile(path.join(__dirname, 'client', 'dist', 'index.html'));
-// })
 
 app.use((err, req, res, next) => {
   const statusCode = err.statusCode || 500;

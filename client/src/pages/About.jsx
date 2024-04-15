@@ -13,7 +13,7 @@ export default function About() {
           <p className='mb-4 text-slate-700'>At Uinvest Realtor and Renovators, we believe in the transformative power of real estate and construction and are dedicated to creating meaningful experiences for our clients. Whether you're buying, selling, or renovating a property, or undertaking a construction project, trust us to deliver unparalleled results and unmatched value.</p>
         </div>
         <div className="hidden md:flex flex-col justify-between">
-          <img src="/img/kashif-center.webp" alt="Kashif Center" className="rounded-lg shadow-lg" style={{ maxHeight: '300px' }}/>
+          <img src='/images/kashif-center.webp' alt="Kashif Center" className="rounded-lg shadow-lg" style={{ maxHeight: '300px' }}/>
         </div>
 
         {/* Portfolio of Sarosh Ahmed Shamsi */}
