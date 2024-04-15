@@ -22,7 +22,7 @@ export default function About() {
           <p className="mb-4 text-slate-700">Sarosh Ahmed Shamsi, the CEO of Uinvest Realtor and Renovators, has a diverse portfolio of real estate and construction projects. With over two decades of experience in the industry, Sarosh has led the company to success by spearheading innovative projects and delivering exceptional results.</p>
           {/* Picture of Sarosh */}
           <div className="hidden md:flex flex-col justify-between">
-            <img src="/img/sarosh.jpg" alt="Sarosh" className="rounded-lg shadow-lg" style={{ maxHeight: '300px', maxWidth: '300px' }}/>
+            <img src="/images/sarosh.jpg" alt="Sarosh" className="rounded-lg shadow-lg" style={{ maxHeight: '300px', maxWidth: '300px' }}/>
           </div>
         </div>
 
@@ -32,7 +32,7 @@ export default function About() {
           <p className="mb-4 text-slate-700">Sohaib Sarosh Shamsi, the Technical Lead of Uinvest Realtor and Renovators, combines his expertise in marketing and IT to drive the company's technological advancements and marketing strategies. With a passion for innovation, Sohaib ensures that the company stays ahead of the curve in a rapidly evolving industry.</p>
           {/* Picture of Sohaib */}
           <div className="hidden md:flex flex-col justify-between">
-            <img src="/img/AD-2022.jpg" alt="Sohaib" className="rounded-lg shadow-lg" style={{ maxHeight: '300px', maxWidth: '300px' }}/>
+            <img src="/images/AD-2022.jpg" alt="Sohaib" className="rounded-lg shadow-lg" style={{ maxHeight: '300px', maxWidth: '300px' }}/>
           </div>
         </div>
 
