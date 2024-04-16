@@ -26,13 +26,6 @@ const app = express();
 
 app.use(cors());
 
-// Use import.meta.url to get the current file path
-const __filename = new URL(import.meta.url).pathname;
-// Use path.dirname to get the directory name
-const __dirname = path.dirname(__filename);
-
-// Serve static files from the 'images' directory
-app.use('/api/images', express.static(path.join(__dirname, 'images')));
 
 
 app.get("/", (req, res)=>{
